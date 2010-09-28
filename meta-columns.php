@@ -1,6 +1,61 @@
 <?php
 /*
 Plugin Name: Meta Columns
+Description: Allow any plain-text custom field to be edited via AJAX on the Post listing page.
+Version: 1.0
+Author: kawauso, pdclark
+*/
+
+/**
+ * Copyright (c) 2010 Your Name. All rights reserved.
+ *
+ * Released under the GPL license
+ * http://www.opensource.org/licenses/gpl-license.php
+ *
+ * This is an add-on for WordPress
+ * http://wordpress.org/
+ *
+ * **********************************************************************
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * **********************************************************************
+ */
+/*
+EXAMPLE USAGE
+
+add_filter('meta_columns_post_types', 'my_meta_columns_post_types');
+add_filter('meta_columns', 'my_meta_columns');
+
+function my_meta_columns_post_types( $post_types ) {
+	// Add list of post types to any previously enabled.
+	// To complete override, just return an array
+	return wp_parse_args( array(
+		'post',
+		'page',
+	), $post_types );
+}
+
+function my_meta_columns($keys) {
+	// Array of meta keys to enable editing for
+	return wp_parse_args( array(
+		// Example AIOSEO meta keys
+		'_aioseop_title'       => __('Title Override'),
+		'_aioseop_description' => __('Description'),
+		'_aioseop_keywords'    => __('Keywords'),
+		'_aioseop_titleatr'    => __('Title Attribute'),
+		'_aioseop_menulabel'   => __('Menu Label'),
+		
+		// General syntax
+		// 'meta_key'       => __('Column Title'),
+	), $keys );
+} 
 */
 
 class Meta_Columns {
@@ -69,16 +124,14 @@ class Meta_Columns {
 		$meta_values = get_post_meta($post_id, $meta_key);
 		
 		$i=0;
-		foreach($meta_values as $meta_value) {
+		do {
 			$js = "metaColumnEdit(this,{post_id:$post_id,meta_key:'$meta_key'";
 			if(count($meta_values) != 1)
-				$js .= ',prev_value_hash:\'' . md5($meta_value) . '\'';
+				$js .= ',prev_value_hash:\'' . md5($meta_values[$i]) . '\'';
 			$js .= '})';
-			if($i)
-				echo '<br />';
-			echo "<span onclick=\"$js\">$meta_value</span>";
+			echo "<div style='min-height:18px;' onclick=\"$js\">$meta_values[$i]</div>";
 			$i++;
-		}
+		} while ( isset( $meta_values[$i] ) );
 	}
 	
 	static function update() { // AJAX save
