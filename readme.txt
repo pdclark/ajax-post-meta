@@ -7,7 +7,7 @@ Donate link:
 Tags: edit custom fields, edit posts, edit, custom field, custom fields, ajax, post meta, meta, aioseo, keywords, search engine optimization, seo, title
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Add AJAX editing for arbitrary post meta.
 
@@ -81,7 +81,7 @@ function my_meta_columns($keys) {
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 == License ==

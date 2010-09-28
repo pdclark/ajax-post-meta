@@ -2,7 +2,7 @@
 /*
 Plugin Name: Meta Columns
 Description: Allow any plain-text custom field to be edited via AJAX on the Post listing page.
-Version: 1.0.1
+Version: 1.0.2
 Author: kawauso, pdclark
 */
 
@@ -135,7 +135,7 @@ class Meta_Columns {
 	}
 	
 	static function update() { // AJAX save
-		if( empty($_POST['post_id']) || empty($_POST['meta_key']) || empty($_POST['meta_value']) ) // Values check
+		if( empty($_POST['post_id']) || empty($_POST['meta_key']) || !isset($_POST['meta_value']) ) // Values check
 			die('-1');
 		
 		$post_id = (int) $_POST['post_id'];
