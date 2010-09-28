@@ -81,7 +81,7 @@ function my_meta_columns($keys) {
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
 * Initial Release
 
 == License ==
