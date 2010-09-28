@@ -126,7 +126,7 @@ class Meta_Columns {
 		$i=0;
 		do {
 			$js = "metaColumnEdit(this,{post_id:$post_id,meta_key:'$meta_key'";
-			if(count($meta_values) != 1)
+			if(count($meta_values) > 1)
 				$js .= ',prev_value_hash:\'' . md5($meta_values[$i]) . '\'';
 			$js .= '})';
 			echo "<div style='min-height:18px;' onclick=\"$js\">$meta_values[$i]</div>";
