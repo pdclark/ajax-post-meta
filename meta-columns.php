@@ -2,7 +2,7 @@
 /*
 Plugin Name: Meta Columns
 Description: Allow any plain-text custom field to be edited via AJAX on the Post listing page.
-Version: 1.0
+Version: 1.0.1
 Author: kawauso, pdclark
 */
 
