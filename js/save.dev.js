@@ -2,7 +2,7 @@ function metaColumnEdit(caller, data) {
 	var e = jQuery(caller), meta_value = e.html();
 	if(!e.children().length) {
 		e.html('<input type="text" value="'+meta_value+'" class="new-meta-column" />');
-		e.append('<a href="#" class="save button">'+metaColumnsL10n.ok+'</a> <a href="#" class="cancel button">'+metaColumnsL10n.cancel+'</a>');
+		e.append('<a href="#" class="save button">'+ajaxMetaL10n.ok+'</a> <a href="#" class="cancel button">'+ajaxMetaL10n.cancel+'</a>');
 		e.children('.save').click(function() {
 			data.action = 'update_meta_column';
 			data.meta_value = e.children('input').val();
