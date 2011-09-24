@@ -3,17 +3,16 @@ Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
 Contributors: brainstormmedia, kawauso, pdclark
 Plugin URI: 
-Donate link: 
-Tags: edit custom fields, edit posts, edit, custom field, custom fields, ajax, post meta, meta, aioseo, keywords, search engine optimization, seo, title
+Tags: aioseo, ajax, all in one seo, bing, custom field, custom fields, description, edit custom fields, fast, google, greg's high performance seo, headspace2, keywords, meta, meta seo pack, meta tags, metadata, platinum seo, post meta, search engine optimization, seo, seo ultimate, title, wordpress seo, wordpress seo by yoast, yahoo
 Requires at least: 3.0
 Tested up to: 3.1.2
 Stable tag: 1.0
 
-Edit SEO tags on the All Posts page. Auto-detects SEO plugins & themes. Supports any other plain-text custom fields.
+Edit SEO tags (or any custom field) from the All Posts page. Auto-detects SEO plugins & themes.
 
 == Description ==
 
-Allow any plain-text custom field to be edited via AJAX on the *All Posts* page. We use it at [Brainstorm Media](http://brainstormmedia.com) for quickly editing SEO titles, descriptions, and keywords, but any plain-text custom field can be targeted.
+Allow any plain-text custom field to be edited via AJAX on the *All Posts* page. We use it at [Brainstorm Media](http://brainstormmedia.com) for quickly editing SEO titles, descriptions, and keywords. However, filters are provided for targeting any plain-text custom field.
 
 AJAX Post Meta will auto-detect and add columns for:
 
@@ -66,12 +65,11 @@ function my_ajax_meta_keys($keys) {
 }
 add_filter('ajax_meta_keys', 'my_ajax_meta_keys');`
 
+== Screenshots ==
+
+1. Clicking a value or blank area brings up an edit field.
+
 == Changelog ==
 
 = 1.0 =
 * Initial Release
-
-== License ==
-
-Copyright 2010 Brainstorm Media - Released under the GNU General Public License
- - [License details](http://www.gnu.org/licenses/gpl.html)

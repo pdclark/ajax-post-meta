@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: AJAX Post Meta
-Description: Allow any plain-text custom field to be edited via AJAX on the Post listing page.
+Description: Allow any plain-text custom field to be edited via AJAX on the All Posts page. Auto-detects SEO plugins.
 Version: 1.0
 Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
