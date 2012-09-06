@@ -6,7 +6,7 @@ Plugin URI:
 Tags: aioseo, ajax, all in one seo, bing, custom field, custom fields, description, edit custom fields, fast, google, greg's high performance seo, headspace2, keywords, meta, meta seo pack, meta tags, metadata, platinum seo, post meta, search engine optimization, seo, seo ultimate, title, wordpress seo, wordpress seo by yoast, yahoo
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 Edit SEO tags (or any custom field) from the All Posts page. Auto-detects SEO plugins & themes.
 
@@ -69,7 +69,14 @@ add_filter('ajax_meta_keys', 'my_ajax_meta_keys');`
 
 1. Clicking a value or blank area brings up an edit field.
 
+== Upgrade Notice ==
+
+* Add additional filter used on custom content type edit screen. Props @pt1985 http://go.brain.st/RHiiTh
+
 == Changelog ==
+
+= 1.0.1 =
+* Add additional filter used on custom content type edit screen. Props @pt1985 http://go.brain.st/RHiiTh
 
 = 1.0 =
 * Initial Release

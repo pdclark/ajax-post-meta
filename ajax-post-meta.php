@@ -2,7 +2,7 @@
 /*
 Plugin Name: AJAX Post Meta
 Description: Allow any plain-text custom field to be edited via AJAX on the All Posts page. Auto-detects SEO plugins.
-Version: 1.0
+Version: 1.0.1
 Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
 */
@@ -37,6 +37,8 @@ class StormAJAXPostMeta {
 		
 		foreach( (array)$post_types as $post_type ) {
 			add_filter("manage_{$post_type}_posts_columns", 'StormAJAXPostMeta::add_columns');
+			add_filter("manage_edit-{$post_type}_columns", 'StormAJAXPostMeta::add_columns');
+
 			add_filter("manage_edit-{$post_type}_sortable_columns", 'StormAJAXPostMeta::sortable_columns');
 		}
 		
