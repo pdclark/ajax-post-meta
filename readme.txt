@@ -5,7 +5,7 @@ Contributors: brainstormmedia, kawauso, pdclark
 Plugin URI: 
 Tags: aioseo, ajax, all in one seo, bing, custom field, custom fields, description, edit custom fields, fast, google, greg's high performance seo, headspace2, keywords, meta, meta seo pack, meta tags, metadata, platinum seo, post meta, search engine optimization, seo, seo ultimate, title, wordpress seo, wordpress seo by yoast, yahoo
 Requires at least: 3.0
-Tested up to: 3.2.1
+Tested up to: 3.6
 Stable tag: 1.0.1
 
 Edit SEO tags (or any custom field) from the All Posts page. Auto-detects SEO plugins & themes.
