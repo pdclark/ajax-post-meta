@@ -3,31 +3,11 @@
 Plugin Name: AJAX Post Meta
 Description: Allow any plain-text custom field to be edited via AJAX on the All Posts page. Auto-detects SEO plugins.
 Version: 1.0.1
-Author: Brainstorm Media
-Author URI: http://brainstormmedia.com
+Author: Adam Harley, Paul Clark, 10up
+Author URI: http://adamharley.co.uk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-
-/**
- * Copyright (c) 2010 Your Name. All rights reserved.
- *
- * Released under the GPL license
- * http://www.opensource.org/licenses/gpl-license.php
- *
- * This is an add-on for WordPress
- * http://wordpress.org/
- *
- * **********************************************************************
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * **********************************************************************
- */
 
 class StormAJAXPostMeta {
 	
