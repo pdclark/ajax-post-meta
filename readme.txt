@@ -1,5 +1,5 @@
 === AJAX Post Meta ===
-Contributors: 10up, kawauso, pdclark
+Contributors: kawauso, pdclark
 Author URI: http://adamharley.co.uk
 Tags: aioseo, ajax, all in one seo, bing, custom field, custom fields, description, edit custom fields, fast, google, greg's high performance seo, headspace2, keywords, meta, meta seo pack, meta tags, metadata, platinum seo, post meta, search engine optimization, seo, seo ultimate, title, wordpress seo, wordpress seo by yoast, yahoo
 Requires at least: 3.0

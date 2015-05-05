@@ -3,7 +3,7 @@
 Plugin Name: AJAX Post Meta
 Description: Allow any plain-text custom field to be edited via AJAX on the All Posts page. Auto-detects SEO plugins.
 Version: 1.0.1
-Author: Adam Harley, Paul Clark, 10up
+Author: Adam Harley, Paul Clark
 Author URI: http://adamharley.co.uk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
